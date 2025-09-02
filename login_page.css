@@ -77,6 +77,9 @@
           border: 1px solid #ccc;
           font-size: 16px;
         }
+        .login-form p{
+          color: black;
+        }
         .login-form button {
           width: 100%;
           padding: 12px 15px;
