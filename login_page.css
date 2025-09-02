@@ -1,22 +1,20 @@
-   header{
+   /* --- Body & Animated Background --- */
+        header{
       color: black;
       padding: 10px;
       font-size: 25px;
       font-weight: bold;
-    }
-
-body {
-          margin: 0;
+    }   
+     body {
+          margin: 40px;
           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-          height: 100vh;
-          overflow: hidden;
-          display: flex;
-          justify-content: center;
-          align-items: center;
           background: linear-gradient(120deg, #6a11cb, #2575fc);
+          overflow-x: hidden;
           position: relative;
+          color: #fff;
         }
-
+   /* --- Body & Animated Background --- */
+ 
      
 
         /* --- Login Wrapper --- */
@@ -107,3 +105,4 @@ body {
           .login-wrapper { flex-direction: column; }
           .login-info, .login-form { padding: 30px; }
         }
+        
