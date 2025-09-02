@@ -1,0 +1,109 @@
+   header{
+      color: black;
+      padding: 10px;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+body {
+          margin: 0;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          height: 100vh;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: linear-gradient(120deg, #6a11cb, #2575fc);
+          position: relative;
+        }
+
+     
+
+        /* --- Login Wrapper --- */
+        .login-wrapper {
+          display: flex;
+          background: white;
+          border-radius: 20px;
+          overflow: hidden;
+          width: 900px;
+          max-width: 95%;
+          box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+          z-index: 1;
+        }
+
+        /* --- Left Info Section --- */
+        .login-info {
+          background: #2575fc;
+          color: white;
+          padding: 40px;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+          overflow-y: auto;
+        }
+        .login-info img {
+          width: 120px;
+          border-radius: 50%;
+          margin-bottom: 20px;
+          border: 3px solid #fff;
+        }
+        .login-info h2 {
+          margin-bottom: 15px;
+        }
+        .login-info p {
+          font-size: 14px;
+          line-height: 1.6;
+          margin-bottom: 12px;
+        }
+
+        /* --- Right Login Form Section --- */
+        .login-form {
+          flex: 1;
+          padding: 40px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .login-form h2 {
+          margin-bottom: 30px;
+          color: #2575fc;
+          text-align: center;
+        }
+        .login-form input {
+          width: 100%;
+          padding: 12px 15px;
+          margin: 10px 0;
+          border-radius: 10px;
+          border: 1px solid #ccc;
+          font-size: 16px;
+        }
+        .login-form button {
+          width: 100%;
+          padding: 12px 15px;
+          margin-top: 20px;
+          background: #ffb703;
+          border: none;
+          border-radius: 10px;
+          font-size: 16px;
+          font-weight: bold;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+        .login-form button:hover {
+          background: #fb8500;
+          color: white;
+        }
+        .error-msg {
+          color: red;
+          margin-top: 10px;
+          font-size: 14px;
+          text-align: center;
+        }
+
+        /* --- Responsive --- */
+        @media(max-width:900px){
+          .login-wrapper { flex-direction: column; }
+          .login-info, .login-form { padding: 30px; }
+        }

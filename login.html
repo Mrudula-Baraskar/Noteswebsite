@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login</title>
+  <link rel="stylesheet" href="login_page.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+<div class="login-wrapper">
+
+    <!-- Left Info Section -->
+    <div class="login-info">
+      
+        <img src="files/study.png" alt="College Logo">
+        <h3>Login using college ID and Password(Name)</h3>
+        <p>Access all your lecture notes, assignments, and reference materials in one place.</p>
+        <p>Upload and download notes safely. Share knowledge with your classmates efficiently.</p>
+        <p>Get notified about new resources instantly and never miss important updates.</p>
+        <img src="files/ae7c68801f9d48ff0a7443a638f3f4e6.jpg" alt="Study Illustration" style="margin-top:20px;">
+    </div>
+
+    <!-- Right Login Form Section -->
+    <div class="login-form">
+      <p>for now the ID is C12345 & Password is pass123</p>
+        <h2>Student Login</h2>
+        <input type="text" id="collegeId" placeholder="College ID / Card Number">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <div class="error-msg" id="errorMsg"></div>
+    </div>
+
+</div>
+
+
+<script>
+    const studentData = [
+      {id: "C12345", password: "pass123"},
+      {id: "C67890", password: "mypassword"}
+    ];
+
+    function login() {
+      const id = document.getElementById('collegeId').value.trim();
+      const password = document.getElementById('password').value.trim();
+      const errorMsg = document.getElementById('errorMsg');
+
+      const student = studentData.find(s => s.id === id && s.password === password);
+
+      if(student){
+        errorMsg.textContent = '';
+        // Redirect to main page
+      window.location.assign('index.html'); 
+
+
+
+      } else {
+        errorMsg.textContent = 'Invalid College ID or Password';
+      }
+    }
+</script>
+</body>
+</html>

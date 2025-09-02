@@ -1,0 +1,198 @@
+    header{
+      color: black;
+      padding: 10px;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+body {
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          background: #f9fafc;
+          margin: 0;
+          padding: 0;
+          color: #333;
+        }
+
+        /* Hero Section */
+        .hero {
+          background: linear-gradient(120deg, #6a11cb 0%, #2575fc 100%);
+          color: white;
+          text-align: center;
+          padding: 80px 20px;
+          border-radius: 0 0 30px 30px;
+        }
+        .hero h1 {
+          font-size: 2.5rem;
+          font-weight: 700;
+        }
+        .hero p {
+          margin-top: 15px;
+          font-size: 1.2rem;
+        }
+        .hero .btn {
+          margin-top: 25px;
+          background: #ffb703;
+          color: #222;
+          font-weight: 600;
+          padding: 12px 25px;
+          border-radius: 30px;
+          text-decoration: none;
+          transition: 0.3s;
+        }
+        .hero .btn:hover {
+          background: #fb8500;
+          color: white;
+        }
+
+        /* Section Title */
+        .classNote {
+          text-align: center;
+          padding: 50px 20px 30px;
+        }
+        .classNote h1 {
+          font-size: 2rem;
+          font-weight: bold;
+          color: #222;
+        }
+
+        /* Card Section */
+       
+        .card-semester {
+          background: #fff;
+          border-radius: 20px;
+          box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+          margin: 20px;
+          padding: 25px;
+          width: 300px;
+          text-align: center;
+          transition: transform 0.3s ease;
+        }
+        .card-semester:hover {
+          transform: translateY(-10px);
+        }
+        .card-semester h3 {
+          font-size: 1.4rem;
+          color: #2575fc;
+          margin-bottom: 20px;
+        }
+        .card-semester p{
+          font-weight: 500;
+          font-size: 25px;
+        }
+
+        /* Modern UL Style */
+        .card-semester ul {
+          list-style: none;
+          padding: 0;
+          margin: 0 0 20px 0;
+        }
+        .card-semester ul li {
+          background: #f1f5f9;
+          margin: 10px 0;
+          padding: 12px 15px;
+          border-radius: 10px;
+          font-weight: 500;
+          text-align: left;
+          display: flex;
+          align-items: center;
+          transition: background 0.3s;
+        }
+        .card-semester ul li::before {
+          content: "📘";
+          margin-right: 10px;
+        }
+        .card-semester ul li:hover {
+          background: #e0f2fe;
+          cursor: pointer;
+        }
+
+        /* Links */
+        .card-semester a {
+          display: inline-block;
+          margin-top: 10px;
+          padding: 10px 18px;
+          background: #6a11cb;
+          color: white;
+          font-weight: 500;
+          text-decoration: none;
+          border-radius: 25px;
+          transition: 0.3s;
+        }
+        .semester-hero {
+          background: linear-gradient(120deg, #6a11cb 0%, #2575fc 100%);
+          color: white;
+          text-align: center;
+          padding: 40px 20px;
+          border-radius: 0 0 30px 30px;
+          margin-bottom: 20px;
+        }
+        .semester-hero h1 {
+          font-size: 2.5rem;
+          font-weight: 700;
+        }
+       
+        .semester {
+          background: #fff;
+          border-radius: 20px;
+          box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+          margin: 20px;
+          padding: 25px;
+          width: 300px;
+          text-align: center;
+          transition: transform 0.3s ease;
+        }
+          .semester h3 {
+          font-size: 1.4rem;
+          color: #2575fc;
+          margin-bottom: 20px;
+        }
+       
+        .semester:hover {
+          transform: translateY(-10px);
+        }
+        .notes h5{
+          text-align:left;
+          color: black;
+          margin:0 15px 15px 0;
+        }
+        .notes ul{
+           list-style: none;
+          padding: 0;
+          margin: 0 5px 5px 0;
+        }
+        .notes ul li {
+          margin: 10px 0;
+          font-weight: 500;
+          text-align: left;
+          transition: background 0.3s;
+        }
+           
+        .notes ul li :hover {
+          
+          cursor: pointer;
+          color: black;
+          
+        }
+
+
+        
+
+        .search-box input {
+          width: 60%;
+          margin: 15px;
+          max-width: 500px;
+          padding: 14px 18px;
+          font-size: 15px;
+          border: none;
+          border-radius: 30px;
+          outline: none;
+          background: #2b2d42;
+          color: white;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+          transition: 0.3s;
+        }
+
+        .search-box input:focus {
+          background: #34374f;
+          box-shadow:  black;
+        }
